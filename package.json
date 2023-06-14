@@ -4,8 +4,13 @@
   "description": "nongvl",
   "main": "index.js",
   "scripts": {
+    "install-dependencies": "npm i & cd frontend && npm install",
+    "start:front": "cd frontend && npm start",
+    "build:front": "cd frontend && npm run build",
+    "start": "npm run start:front",
+    "build": "npm run build:front",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Syuq",
   "license": "ISC"
 }
