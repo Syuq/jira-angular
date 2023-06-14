@@ -11,6 +11,21 @@
     "build": "npm run build:front",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syuq/jira-angular-clone.git"
+  },
+  "keywords": [
+    "angular",
+    "akita",
+    "jira-clone",
+    "tailwind",
+    "typescript"
+  ],
   "author": "Syuq",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Syuq/jira-angular-clone/issues"
+  },
+  "homepage": "https://github.com/Syuq/jira-angular-clone#readme"
 }

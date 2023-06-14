@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { WorksInProgressComponent } from './views/pages/works-in-progress/works-in-progress.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'wip',
+    component: WorksInProgressComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
