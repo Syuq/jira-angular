@@ -1,4 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SideBarLink } from 'src/app/interface/ui-model/nav-link';
+import { SideBarLinks } from 'src/app/config/sidebar';
+import { Project } from 'src/app/interface/project';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,11 +9,18 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  @Input() expanded: boolean | undefined
+  @Input() expanded: boolean;
+  project: Project;
+  
+  get sidebarWidth(): number {
+    return this.expanded ? 240 : 20;
+  }
+
+  sideBarLinks: SideBarLink[];
 
   constructor() {}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.sideBarLinks = SideBarLinks;
   }
 }

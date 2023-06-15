@@ -1,6 +1,7 @@
 <aside class="navbarLeft">
     <div class="navbarLeft-content">
-        <div class="logoLink">
+        <div class="logoLink"
+             title="Jira Clone Angular - trungk18">
             <svg class="h-8 w-8 text-textLogo"
                  viewBox="0 0 32 32"
                  xmlns="http://www.w3.org/2000/svg"
@@ -42,30 +43,37 @@
 
         <div *ngFor="let item of items"
              class="item">
-            <div (click)="item.handler"
-                 v-tippy="item.tooltip"
+            <div (click)="item.handler()"
+                 nz-tooltip
+                 [nzTooltipTitle]="item.tooltip"
+                 nzTooltipPlacement="right"
                  class="itemIcon">
-                <!-- <j-icon class="text-white"
-                        :name="item.icon"
-                        :size="24"></j-icon> -->
+                <i class="text-white text-xl"
+                   nz-icon
+                   [nzType]="item.icon"
+                   nzTheme="outline"></i>
             </div>
         </div>
         <div class="flex-auto"></div>
         <div class="item">
-            <div v-tippy="currentUser.name"
+            <div nz-tooltip
+                 [nzTooltipTitle]="'trungk18'"
+                 nzTooltipPlacement="right"
                  class="itemIcon">
-                <!-- <j-avatar :name="currentUser.name"
-                          :avatarUrl="currentUser.avatarUrl"
-                          :size="26"></j-avatar> -->
+                <img class="w-auto rounded-full user-profile-photo"
+                     src="https://trungk18.com/img/profile.png" />
             </div>
         </div>
         <div class="item">
-            <div v-tippy="`About`"
+            <div nz-tooltip
+                 [nzTooltipTitle]="'About'"
+                 nzTooltipPlacement="right"
                  class="itemIcon">
-                <!-- <j-icon fill="transparant"
-                        class="text-white"
-                        name="help"
-                        :size="24"></j-icon> -->
+                <i class="text-white text-xl"
+                   nz-icon
+                   nzType="question-circle"
+                   nzTheme="fill">
+                </i>
             </div>
         </div>
     </div>

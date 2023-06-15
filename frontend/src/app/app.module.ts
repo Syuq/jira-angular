@@ -28,7 +28,8 @@ registerLocaleData(en);
     NavigationComponent,
     ProjectComponent,
     NavbarLeftComponent,
-    SidebarComponent
+    SidebarComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

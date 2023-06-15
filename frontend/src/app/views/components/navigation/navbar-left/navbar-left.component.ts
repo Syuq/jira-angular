@@ -7,22 +7,23 @@ import { Observable } from 'rxjs';
   styleUrls: ['./navbar-left.component.scss']
 })
 export class NavbarLeftComponent implements OnInit {
-  currentUser$: Observable<any> | undefined
-  items: NavItem[] | undefined
+  currentUser$: Observable<any>;
+  items: NavItem[];
   constructor() {}
 
   ngOnInit(): void {
-      this.items = [
-        new NavItem('search', 'Search issues', () => {}),
-        new NavItem('plus', 'Create issues', () => {}),
-      ]
+    this.items = [
+      new NavItem('search', 'Search issues', () => {
+
+      }),
+      new NavItem('plus', 'Create issue', () => {})
+    ];
   }
 }
 
 class NavItem {
-handler: any;
-  constructor(public icon: string, public tooltip: string, handler: Handler) { }
-  }
+  constructor(public icon: string, public tooltip: string, public handler: Handler) {}
+}
 
 interface Handler {
   (): void
