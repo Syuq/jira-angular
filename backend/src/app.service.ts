@@ -3,6 +3,6 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World!';
+    return 'This is a simple API for Angular Jira Clone app. For more info, visit https://github.com/syuq/jira-angular-clone';
   }
 }
