@@ -1,4 +1,4 @@
-import { Comment } from './comment';
+import { JComment } from './comment';
 
 export enum IssueType {
   STORY = 'Story',
@@ -28,10 +28,18 @@ export enum IssuePriority {
   HIGHEST = 'Highest'
 }
 
-export interface Issue {
+export const IssuePriorityColors = {
+  [IssuePriority.HIGHEST]: '#CD1317',
+  [IssuePriority.HIGH]: '#E9494A',
+  [IssuePriority.MEDIUM]: '#E97F33',
+  [IssuePriority.LOW]: '#2D8738',
+  [IssuePriority.LOWEST]: '#57A55A'
+};
+export interface JIssue {
   id: string;
   title: string;
   type: IssueType;
+  status: IssueStatus;
   priority: IssuePriority;
   listPosition: number;
   description: string;
@@ -42,6 +50,6 @@ export interface Issue {
   updatedAt: string;
   reporterId: string;
   userIds: string[];
-  comment: Comment[];
+  comments: JComment[];
   projectId: string;
 }
