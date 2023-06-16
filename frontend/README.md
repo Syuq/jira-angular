@@ -1,10 +1,31 @@
 # Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+The front end part of [Angular Jira clone][github] application built with.
+
+![Tech logos][stack]
+
+- [Angular CLI][cli]
+- [Akita][akita] state management
+- UI modules:
+  - [TailwindCSS][tailwind]
+  - Angular CDK [drag and drop][cdkdrag]
+  - [ng-zorro][ng-zorro] UI component: `tooltip`, `dropdown`, `select`, `icon`
+  - [ngx-quill][quill]
+
+[cli]: https://cli.angular.io/
+[akita]: https://datorama.github.io/akita/
+[nestjs]: https://nestjs.com/
+[tailwind]: https://tailwindcss.com/
+[cdkdrag]: https://material.angular.io/cdk/drag-drop/overview
+[ng-zorro]: https://ng.ant.design/docs/introduce/en
+[quill]: https://github.com/KillerCodeMonkey/ngx-quill
+[stack]: src/assets/img/jira-clone-tech-stack.png
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -12,16 +33,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[github]: https://github.com/syuq/
