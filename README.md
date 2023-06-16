@@ -54,4 +54,4 @@ Insprited by [oldboyxx/jira_clone][oldboyxx] and [Datlyfe/jira_clone][Datlyfe]
 
 [oldboyxx]: https://github.com/oldboyxx/jira_clone
 [Datlyfe]: https://github.com/Datlyfe/jira_clone
-[stack]: https://github.com/Syuq/jira-angular-clone/raw/master/frontend/src/assets/img/jira-clone-tech-stack.png
+[stack]: frontend/src/assets/img/jira-clone-tech-stack.png
