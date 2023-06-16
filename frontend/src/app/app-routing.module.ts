@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { WorksInProgressComponent } from './views/pages/works-in-progress/works-in-progress.component';
-import { ProjectComponent } from './views/pages/project/project.component';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:"",
-    component: ProjectComponent,
-    children: [
-
-    ]
+    path: 'project',
+    loadChildren: () => import('./project/project.module').then((m) => m.ProjectModule)
   },
   {
     path: 'wip',
-    component: WorksInProgressComponent
+    loadChildren: () =>
+      import('./work-in-progress/work-in-progress.module').then(
+        (m) => m.WorkInProgressModule
+      )
+  },
+  {
+    path: '',
+    redirectTo: 'project',
+    pathMatch: 'full'
   }
 ];
 

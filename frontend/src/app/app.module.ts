@@ -1,49 +1,38 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NG_ENTITY_SERVICE_CONFIG } from '@datorama/akita-ng-entity-service';
+import { AkitaNgRouterStoreModule } from '@datorama/akita-ng-router-store';
+import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WorksInProgressComponent } from './views/pages/works-in-progress/works-in-progress.component';
-import { NavigationComponent } from './views/components/navigation/navigation/navigation.component';
-import { ProjectComponent } from './views/pages/project/project.component';
-import { NavbarLeftComponent } from './views/components/navigation/navbar-left/navbar-left.component';
-import { SidebarComponent } from './views/components/navigation/sidebar/sidebar.component';
-import { NZ_I18N } from 'ng-zorro-antd/i18n';
-import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { IconsProviderModule } from './icons-provider.module';
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NzMenuModule } from 'ng-zorro-antd/menu';
-
-registerLocaleData(en);
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
+import { QuillModule } from 'ngx-quill'
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    WorksInProgressComponent,
-    NavigationComponent,
-    ProjectComponent,
-    NavbarLeftComponent,
-    SidebarComponent,
-    NavigationComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
     BrowserAnimationsModule,
-    IconsProviderModule,
-    NzLayoutModule,
-    NzMenuModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    NzSpinModule,
+    NzIconModule.forRoot([]),
+    environment.production ? [] : AkitaNgDevtools,
+    AkitaNgRouterStoreModule,
+    QuillModule.forRoot()    
   ],
   providers: [
-    { provide: NZ_I18N, useValue: en_US }
+    {
+      provide: NG_ENTITY_SERVICE_CONFIG,
+      useValue: { baseUrl: 'https://jsonplaceholder.typicode.com' }
+    }
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
