@@ -1,4 +1,4 @@
-# A simplified Jira clone built with Angular 16 and Akita
+# A simplified Jira clone built with Angular 9 and Akita
 
 It is still <u>under development</u>.(Jun 2023) in my spare time.
 Thanks for visiting. See you!
