@@ -46,7 +46,7 @@ I will not be accepting PR's on this repository. Feel free to fork and maintain 
 
 ## Credits
 
-Insprited by [oldboyxx/jira_clone][oldboyxx] and [Datlyfe/jira_clone][Datlyfe]
+Insprited by [oldboyxx/jira_clone][oldboyxx] and [Datlyfe/jira_clone][Datlyfe] and [trungk18/jira-clone-angular][trungk18]
 
 ## License
 
@@ -54,4 +54,5 @@ Insprited by [oldboyxx/jira_clone][oldboyxx] and [Datlyfe/jira_clone][Datlyfe]
 
 [oldboyxx]: https://github.com/oldboyxx/jira_clone
 [Datlyfe]: https://github.com/Datlyfe/jira_clone
+[trungk18]: https://github.com/trungk18/jira-clone-angular
 [stack]: frontend/src/assets/img/jira-clone-tech-stack.png
