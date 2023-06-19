@@ -17,7 +17,6 @@ Thanks for visiting. See you!
 ![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)
-![Akita](https://camo.githubusercontent.com/fff38c37b1fca3cb2c8ae70cd4a03df4a4b44f5d07e80ffa661c7f0e6a7f17a9/68747470733a2f2f73382e706f7374696d672e63632f64346d3366633974782f696d6167652e706e67)
 ## Features
 
 - Proven, scalable, and easy to understand project structure
