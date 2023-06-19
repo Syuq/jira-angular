@@ -1,6 +1,6 @@
 # Frontend
 
-The front end part of [Angular Jira clone][github] application built with.
+The front end part of [Angular Quan ly du an][github] application built with.
 
 ![Tech logos][stack]
 
