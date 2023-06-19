@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
-  breadcrumbs: string[] = ['Projects', 'Angular Jira Clone', 'Kanban Board'];
-  
+  breadcrumbs: string[] = ['Projects', 'Angular Quan ly du an', 'Kanban Board'];
+
   constructor() {}
 
   ngOnInit(): void {}
