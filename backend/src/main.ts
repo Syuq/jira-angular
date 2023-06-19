@@ -1,14 +1,3 @@
-/*
- * Project: Angular Jira clone
- * Author: Syuq (syuq@gmail.com)
- * Homepage: https://github.com/syuq/jira-angular-clone
- * -----
- * Last Modified: Monday, 29th June 2023 9:43:45 am
- * Modified By: Syuq (syuq@gmail.com>)
- * -----
- * Copyright 2023 Syuq
- */
-
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { CorsOptions } from '@nestjs/common/interfaces/external/cors-options.interface';

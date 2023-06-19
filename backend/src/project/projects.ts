@@ -1,8 +1,8 @@
 export const Project = {
   id: '140892',
-  name: 'Angular Jira Clone',
+  name: 'Quan ly du an',
   url: 'https://github.com/syuq/jira-angular-clone',
-  description: 'A Jira clone app built with Angular and Akita - by syuq',
+  description: 'Quan ly du an app built with Angular and Akita - by Syuq',
   category: 'Software',
   createdAt: '2023-06-12T16:00:00.000Z',
   updatedAt: '2023-06-13T16:00:00.000Z',
