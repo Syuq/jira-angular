@@ -7,13 +7,6 @@ const routes: Routes = [
     loadChildren: () => import('./project/project.module').then((m) => m.ProjectModule)
   },
   {
-    path: 'wip',
-    loadChildren: () =>
-      import('./work-in-progress/work-in-progress.module').then(
-        (m) => m.WorkInProgressModule
-      )
-  },
-  {
     path: '',
     redirectTo: 'project',
     pathMatch: 'full'
