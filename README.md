@@ -1,7 +1,7 @@
-# A simplified Quan ly du an built with Angular and Akita
+# A simplified project management built with Angular and Akita
 
 It is still <u>under development</u>.(Jun 2023) in my spare time.
-Thanks for visiting. See you!
+Thanks, See you!
 
 ![Tech logos][stack]
 
@@ -27,7 +27,7 @@ Thanks for visiting. See you!
 
 ## Setting up development environment 🛠
 
-- `git clone https://github.com/Syuq/jira-angular-clone.git`
+- `git clone https://github.com/Syuq/projectManagementangular-clone.git`
 - `npm run install-dependencies`
 - `cd frontend && npm start`
 - App should now be running on `http://localhost:4200/`
