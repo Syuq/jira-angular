@@ -1,12 +1,14 @@
 {
-  "name": "jira-angular-clone",
+  "name": "projectManagementangular-clone",
   "version": "1.0.0",
-  "description": "nongvl",
+  "description": "project Management Angular",
   "main": "index.js",
   "scripts": {
     "install-dependencies": "npm i & cd frontend && npm install",
     "start:front": "cd frontend && npm start",
     "build:front": "cd frontend && npm run build",
+    "start:back": "cd backend && npm start",
+    "build:back": "cd backend && npm run build",
     "start": "npm run start:front",
     "build": "npm run build:front",
     "test": "echo \"Error: no test specified\" && exit 1"
